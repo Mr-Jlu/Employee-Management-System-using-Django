@@ -1,0 +1,7 @@
+Add Employee 
+List Employee
+Employee full detail
+Monthly Attendence
+Create Salary Slip
+Generate Salary Slip [PDF]
+Generate Salary Slip [Excel]
