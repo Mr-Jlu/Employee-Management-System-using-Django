@@ -1,0 +1,66 @@
+{% load static %}
+
+<!--{#<nav class="navbar navbar-default">#}-->
+<!--<nav class="navbar primary-color">-->
+  <!--<div class="container-fluid">-->
+    <!--<div class="navbar-header">-->
+      <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">-->
+        <!--<span class="sr-only">Toggle navigation</span>-->
+        <!--<span class="icon-bar">LOL</span>-->
+        <!--<span class="icon-bar"></span>-->
+        <!--<span class="icon-bar"></span>-->
+      <!--</button>-->
+      <!--<a class="navbar-brand" href="{% url 'main_home' %}">Employee</a>-->
+    <!--</div>-->
+
+    <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+      <!--<ul class="nav navbar-nav navbar-right">-->
+        <!--<li><a href="{% url 'employees:all' %}"><i class="fa fa-users"></i>Official Details</a></li>-->
+        <!--<li><a href="{% url 'employees:all' %}"><i class="fa fa-users"></i>Documents</a></li>-->
+        <!--<li><a href="{% url 'employees:add' %}"><i class="fa fa-user-plus"></i>Leaves</a></li>-->
+      <!--</ul>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</nav>-->
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <a class="mdl-layout-title" href="{% url 'main_home' %}">Infi Cloud Pvt Ltd</a>
+    </div>
+    <!-- Tabs -->
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+      <a href="{% url 'employees:add' %}" class="mdl-layout__tab is-active">Official Details</a>
+      <a href="#scroll-tab-2" class="mdl-layout__tab">Documents</a>
+      <a href="#scroll-tab-3" class="mdl-layout__tab">Leaves</a>
+      <a href="#scroll-tab-4" class="mdl-layout__tab">Salary</a>
+      <a href="#scroll-tab-5" class="mdl-layout__tab">Personal</a>
+      <a href="{% url 'employees:contacts' %}" class="mdl-layout__tab">Contact</a>
+      <a href="#scroll-tab-6" class="mdl-layout__tab">Skills</a>
+      <a href="#scroll-tab-6" class="mdl-layout__tab">Experience</a>
+      <a href="#scroll-tab-6" class="mdl-layout__tab">Education</a>
+      <a href="#scroll-tab-6" class="mdl-layout__tab">Family Details</a>
+    </div>
+  </header>
+  <!--<main class="mdl-layout__content">-->
+    <!--<section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">-->
+      <!--<div class="page-content">-->
+      <!--</div>-->
+    <!--</section>-->
+    <!--<section class="mdl-layout__tab-panel" id="scroll-tab-2">-->
+      <!--<div class="page-content"></div>-->
+    <!--</section>-->
+    <!--<section class="mdl-layout__tab-panel" id="scroll-tab-3">-->
+      <!--<div class="page-content">&lt;!&ndash; Your content goes here &ndash;&gt;</div>-->
+    <!--</section>-->
+    <!--<section class="mdl-layout__tab-panel" id="scroll-tab-4">-->
+      <!--<div class="page-content">&lt;!&ndash; Your content goes here &ndash;&gt;</div>-->
+    <!--</section>-->
+    <!--<section class="mdl-layout__tab-panel" id="scroll-tab-5">-->
+      <!--<div class="page-content">&lt;!&ndash; Your content goes here &ndash;&gt;</div>-->
+    <!--</section>-->
+    <!--<section class="mdl-layout__tab-panel" id="scroll-tab-6">-->
+      <!--<div class="page-content">&lt;!&ndash; Your content goes here &ndash;&gt;</div>-->
+    <!--</section>-->
+  <!--</main>-->
+</div>

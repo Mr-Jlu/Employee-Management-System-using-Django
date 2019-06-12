@@ -1,0 +1,65 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}INFI-CLOUD{% endblock %}</title>
+    {% include 'includes/css.html' %}
+    <style>
+    .demo-layout-transparent {
+      background: url('https://www.cyberworx.in/images/services/website-startups.jpg') center / cover;
+    }
+    .demo-layout-transparent .mdl-layout__header,
+    .demo-layout-transparent .mdl-layout__drawer-button {
+      /* This background is dark, so we set text to white. Use 87% black instead if
+         your background is light. */
+      color: white;
+    }
+    </style>
+  </head>
+  <body>
+  <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">INFI CLOUD PRIVATE LIMITED</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+          Logout
+        </button>
+        </a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">INFI-CLOUD</span>
+    <nav class="mdl-navigation">
+
+      <a id="submenu" class="mdl-navigation__link" href="#"><i class="material-icons md-36">account_box</i>Employees</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons md-36">timeline</i>Allowances</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons md-36">spellcheck</i>Arrears</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons md-36">contact_mail</i> Attendance</a>
+      <a class="mdl-navigation__link" href=""><i class="material-icons md-36">payment</i>Payroll</a>
+
+      <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="submenu">
+      <li class="mdl-menu__item" onclick="location.href='{% url 'employees:add' %}'">Add Employee</li>
+      <li class="mdl-menu__item" onclick="location.href='{% url 'employees:all' %}'">List Employee</li>
+      <li class="mdl-menu__item" onclick="location.href='{% url 'employees:all' %}'">Employee Full Details</li>
+      </ul>
+
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+  </main>
+</div>
+
+
+  </body>
+</html>
